@@ -1,0 +1,13 @@
+.movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+section{
+    margin-top: 7px;
+}
+
+.brand-logo {
+    padding-left: 20px;
+}
