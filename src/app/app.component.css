@@ -1,8 +1,7 @@
 .movies {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 section{
     margin-top: 7px;
