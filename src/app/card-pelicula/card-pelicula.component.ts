@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { GetPeliculasService } from '../get-peliculas.service';
 
 @Component({
   selector: 'app-card-pelicula',
@@ -8,8 +9,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardPeliculaComponent implements OnInit {
 
   @Input() peli: object;
-  imagePath: string = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/";
-  constructor() { }
+  imagePath: string;
+  constructor(private api: GetPeliculasService) { 
+    this.imagePath = api.getImagePath();
+  }
 
   ngOnInit() {
   }

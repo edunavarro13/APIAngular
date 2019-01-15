@@ -7,11 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { GetPeliculasService } from './get-peliculas.service';
 import { CardPeliculaComponent } from './card-pelicula/card-pelicula.component';
+import { TrendingMoviesComponent } from './trending-movies/trending-movies.component';
+import { HomeComponent } from './home/home.component';
+import { DetallePeliculaComponent } from './detalle-pelicula/detalle-pelicula.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardPeliculaComponent
+    CardPeliculaComponent,
+    TrendingMoviesComponent,
+    HomeComponent,
+    DetallePeliculaComponent
   ],
   imports: [
     BrowserModule,

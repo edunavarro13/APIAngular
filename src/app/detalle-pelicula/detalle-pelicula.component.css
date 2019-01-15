@@ -1,0 +1,40 @@
+.titulo-pelicula {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+    font-size: 6.5vh;
+    color: white;
+    font-family: 'Coiny', cursive;
+    text-decoration: underline;
+}
+
+.tarjeta-pelicula {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 10px;
+}
+
+.espacio-vacio {
+    height: 5vh;
+}
+
+.detalle-imagen{
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.contenido-pelicula {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 2.5vh;
+}
+
+.parrafos-contenido {
+    font-weight: bold;
+    font-size: 3vh;
+}

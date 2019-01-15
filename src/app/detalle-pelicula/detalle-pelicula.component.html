@@ -1,0 +1,18 @@
+<section class="indigo lighten-4">
+  <div class="espacio-vacio"></div>
+  <div class="tarjeta-pelicula teal lighten-1">
+    <div class="titulo-pelicula">
+      {{ pelicula.title || pelicula.original_title }}
+    </div>
+    <div class="contenido-pelicula">
+      <img class="detalle-imagen" src="{{ imagePath + pelicula.poster_path }}">
+      <div>
+        <p class="parrafos-contenido">Overview:</p>
+        <p>{{ pelicula.overview }}</p>
+        <p class="parrafos-contenido">Homepage:</p>
+        <p>{{ pelicula.homepage }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="espacio-vacio"></div>
+</section>
