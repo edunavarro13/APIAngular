@@ -9,6 +9,13 @@
     text-decoration: underline;
 }
 
+.tagline-pelicula {
+    color: rgb(219, 219, 219);
+    text-align: center;
+    font-size: 2.5vh;
+    font-style: italic;
+}
+
 .tarjeta-pelicula {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -34,7 +41,28 @@
     font-size: 2.5vh;
 }
 
+.contenido-texto-pelicula {
+    padding-right: 1vw;
+    margin-bottom: 2vh;
+    font-family: 'Merriweather', serif;
+}
+
 .parrafos-contenido {
     font-weight: bold;
     font-size: 3vh;
+    border-bottom: 1px white solid;
+}
+
+a {
+    color: rgb(173, 10, 10);
+}
+a:hover {
+    color: silver;
+}
+.div-li {
+    padding-left: 2vw;
+}
+.logo-companies {
+    height: 8vh;
+    width: 8vw;
 }

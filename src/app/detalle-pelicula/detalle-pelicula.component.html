@@ -1,16 +1,31 @@
 <section class="indigo lighten-4">
   <div class="espacio-vacio"></div>
-  <div class="tarjeta-pelicula teal lighten-1">
+  <div class="tarjeta-pelicula teal">
     <div class="titulo-pelicula">
       {{ pelicula.title || pelicula.original_title }}
     </div>
+    <div *ngIf="pelicula.tagline" class="tagline-pelicula">
+      ({{ pelicula.tagline }})
+    </div>
     <div class="contenido-pelicula">
       <img class="detalle-imagen" src="{{ imagePath + pelicula.poster_path }}">
-      <div>
+      <div class="contenido-texto-pelicula">
         <p class="parrafos-contenido">Overview:</p>
-        <p>{{ pelicula.overview }}</p>
-        <p class="parrafos-contenido">Homepage:</p>
-        <p>{{ pelicula.homepage }}</p>
+        <p>{{ pelicula.overview || 'Not found!' }}</p>
+        <p class="parrafos-contenido">Release date:</p>
+        <p>{{ pelicula.release_date || 'Not found!' }} ({{ pelicula.status || 'Status unknown' }})</p>
+        <p *ngIf="pelicula.homepage" class="parrafos-contenido">Homepage:</p>
+        <a *ngIf="pelicula.homepage" href="{{ pelicula.homepage }}" target="_blank">{{ pelicula.homepage }}</a>
+        <p class="parrafos-contenido">Genres:</p>
+        <div class="div-li">
+          <li *ngFor="let generos of pelicula.genres">{{ generos.name }}</li>
+        </div>
+        <p class="parrafos-contenido">Production companies:</p>
+        <div class="div-li">
+          <li *ngFor="let companies of pelicula.production_companies">{{ companies.name }}</li>
+        </div>
+        <p class="parrafos-contenido">Vote:</p>
+        <p>{{ pelicula.vote_average || 'Not found!' }}⭐️ ({{ pelicula.vote_count }})</p>
       </div>
     </div>
   </div>

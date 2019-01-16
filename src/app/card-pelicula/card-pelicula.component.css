@@ -9,4 +9,12 @@
 
 .card {
     margin: 10px;
+    color: white;
+}
+
+a {
+    color: rgb(173, 10, 10);
+}
+a:hover {
+    color: silver;
 }
