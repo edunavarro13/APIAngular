@@ -8,7 +8,7 @@ import { GetPeliculasService } from '../get-peliculas.service';
 })
 export class CardPeliculaComponent implements OnInit {
 
-  @Input() peli: object;
+  @Input() peli;
   imagePath: string;
   constructor(private api: GetPeliculasService) { 
     this.imagePath = api.getImagePath();

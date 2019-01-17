@@ -10,7 +10,7 @@ import { GetPeliculasService } from '../get-peliculas.service';
 export class DetallePeliculaComponent implements OnInit {
 
   id: number;
-  pelicula: object;
+  pelicula;
   imagePath: string;
   constructor(private route: ActivatedRoute, private api: GetPeliculasService) {
     this.imagePath = api.getImagePath();
